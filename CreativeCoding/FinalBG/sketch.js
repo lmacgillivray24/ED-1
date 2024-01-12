@@ -22,7 +22,7 @@ function draw() {
   {
     
   for (var x = 0; x < windowWidth; x = x + sideLen){
- image (gif, x, y, sidLen, sideLen);
+ image (gif, x, y, sideLen, sideLen);
   }
 }  
 }
