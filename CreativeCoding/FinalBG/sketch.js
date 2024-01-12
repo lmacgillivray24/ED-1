@@ -2,7 +2,9 @@
 
 let gif;
 
-function preload ('assets/GIFTransparent.gif');
+function preload (){
+gif = loadImage ('assets/GIFTransparent.gif');
+}
 
 
 function setup() {
@@ -13,7 +15,7 @@ function setup() {
 
 function draw() {
 
-  var num = 50;
+  var num = 5;
   var sideLen = windowWidth/num;
  
     for (var y = 0; y < windowHeight; y = y + sideLen)
@@ -22,12 +24,9 @@ function draw() {
   for (var x = 0; x < windowWidth; x = x + sideLen){
  image (gif, x, y, sidLen, sideLen);
   }
-  
-  function windowResized (){
-  resizeCanvas (windowWidth, windowHeight)
 }  
 }
 
 function windowResized (){
-resizeCanvas (windowWidth, windowHeight)
+	resizeCanvas (windowWidth, windowHeight);
 }
